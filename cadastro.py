@@ -11,3 +11,10 @@ while True:
     if (opcao == 1)
         print("=======Tela de Cadastro=======") 
         print("==============================")
+    elif (opcao == 2):
+        print ("=============================")
+        print ("===tela de login===")
+        print("==============================")
+    else:
+        print("voce esta saindo do aplicativo, ate mais!")
+        break 
