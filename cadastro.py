@@ -16,7 +16,7 @@ while True:
     print("3 - Sair")
 
     opcao =input("EScolha uma opcao: ")
-    if (opcao == "1")
+    if (opcao == "1"):
         print("=======Tela de Cadastro=======") 
         print("==============================")
         nome = input("digite seu nome: ")
@@ -34,13 +34,28 @@ while True:
         
         #processamento de usuario e senha
         if login_usuario == usuario and login_senha == senha :
-            print("\nlogin realizado com sucesso!\n")
-            print("bem vindo,", nome)
+            while True:
+                print("\nlogin realizado com sucesso!\n")
+                print("bem vindo,", nome)
+                print("\n======Área do usuario======\n")
+                print("1 - ver os dados cadastrados")
+                print("2 - voltar para o menu anterior")
+
+                usuario_opcao = input("\nescolha umas das opcoes do menu acima: \n")
+
+                if (usuario_opcao == "1"):
+                    print("\n============")
+                    print("===dados cadastrados===")
+                    print("============\n")
+                elif(usuario_opcao == "2"):
+                    print("\n  voce esta voltando para o menu anterior!")
+                    break
+                else:
+                    print("\n opcao digitada invalida, use os numeros do menu!")
+        
         else:
-            print("usuario ou senha incorretos")
+            print("\nusuario ou senha incorretos\n")
 
     elif(opcao == "3"):
-        print("voce esta saindo do aplicativo, ate mais!")
+        print("\nvoce esta saindo do aplicativo, ate mais!\n")
         break 
-    else:
-        print("Valor digitado, invalido, use apenas números inteiros do menu")    
